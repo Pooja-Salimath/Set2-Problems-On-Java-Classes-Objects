@@ -8,7 +8,10 @@ class EmployeeWageForCompany
 
 	public static void main(String[] args)
 	{
-		
+		ComputeEmpWage();
+	}
+	public static int ComputeEmpWage()
+	{
 		int empHrs = 0;
 		int empWage = 0;
 		int totalWorkingDays = 0;
@@ -36,5 +39,6 @@ class EmployeeWageForCompany
 		}
 		int TotalempWage= totalWorkingHrs  * RATE_PER_HOUR;
 		System.out.println("Total Monthly Employee Wage:" +TotalempWage);
+		return TotalempWage;
 	}
 }
